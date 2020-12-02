@@ -10,6 +10,7 @@ with open('input.txt', 'r') as file:
         policy, password = line.split(':')
         occurrences, letter = policy.split()
         first_occ, second_occ = map(int, occurrences.split('-'))
+        # didn't remove blank at 0, therefore char 0 is at pos 1
         f = password[first_occ] == letter
         s = password[second_occ] == letter
         
