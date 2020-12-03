@@ -19,14 +19,10 @@ def slide_down(step_size_x, step_size_y):
     map_height = len(map_)
     
     while pos_y < map_height:
-        if map_[pos_y][pos_x] == '#':
-            tree_count += 1
-            map_[pos_y][pos_x] = 'X'
-        else:
-            map_[pos_y][pos_x] = 'O'   
-       # print(''.join(map_[pos_y]))
+        tree_count += int(map_[pos_y][pos_x] == '#')
         pos_x += step_x    
         if pos_x >= map_width:
+            # wrap around to next lane
             pos_x = pos_x % map_width        
         pos_y += step_y
         
