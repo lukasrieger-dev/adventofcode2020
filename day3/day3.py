@@ -10,8 +10,7 @@ def init_map(file_path):
     return m
 
 
-def slide_down(step_size_x, step_size_y):
-    map_ = init_map('input.txt')
+def slide_down(step_size_x, step_size_y, map_):
     tree_count = 0
     pos_x, pos_y = 0, 0
     step_x, step_y = step_size_x, step_size_y    
@@ -29,11 +28,13 @@ def slide_down(step_size_x, step_size_y):
     return tree_count
 
 # === Main ===
+map_ = init_map('input.txt')
 toboggans = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
 total = 1
 
 for toboggan in toboggans:
-    crashes = slide_down(*toboggan)
+    crashes = slide_down(*toboggan, map_)
     total *= crashes
 
 print(total)
+    
