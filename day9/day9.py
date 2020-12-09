@@ -37,11 +37,10 @@ stop = False
 for number in stream('input.txt'):
     if stop:
         break
-    next_range = []
-    ranges.append(next_range)
+    ranges.append(number)
     
-    for r in ranges:
-        r.append(number)
+    for i in range(len(ranges)):
+        r = ranges[i:]
         if sum(r) == bad_number:
             print(min(r) + max(r))
             stop = True
