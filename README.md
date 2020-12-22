@@ -22,3 +22,7 @@ Day 18: [Operation Order](https://github.com/lukasrieger-dev/adventofcode2020/bl
 Day 19: [Monster Messages](https://github.com/lukasrieger-dev/adventofcode2020/blob/main/19-aoc-2020/day19.py)<br>
 Day 20: [Jurassic Jigsaw](https://github.com/lukasrieger-dev/adventofcode2020/blob/main/20-aoc-2020/day20.py)<br>
 Day 21: [Allergen Assessment](https://github.com/lukasrieger-dev/adventofcode2020/blob/main/21-aoc-2020/day21.py)<br>
+Day 22: [Crab Combat]
+Day 23:
+Day 24:
+Day 25:
